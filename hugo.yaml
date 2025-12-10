@@ -1,0 +1,44 @@
+baseURL: "https://phakornt.github.io/" # We will fix this later
+languageCode: "en-us"
+title: "phakorn.io"
+theme: "PaperMod"
+
+params:
+  # This enables the specific Portfolio layout
+  profileMode:
+    enabled: true
+    title: "Hi, I'm PHAKORN"
+    subtitle: "Python Developer | Data Scientist | Tech Enthusiast"
+    imageUrl: "/images/profile.png" # optional
+    imageTitle: "My Profile Pic"
+    buttons:
+      - name: "My Projects"
+        url: "/projects"
+      - name: "Contact Me"
+        url: "mailto:youremail@example.com"
+
+  # Social icons that appear below your bio
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/yourusername"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/yourusername"
+      
+  # Navigation menu (top right)
+  defaultTheme: auto # or dark/light
+  ShowReadingTime: true
+
+menu:
+  main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 15        # Controls the order (higher number = further right)
+    - identifier: resume  # <--- Add this section
+      name: About Me
+      url: /resume/
+      weight: 20
